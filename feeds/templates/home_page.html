@@ -1,0 +1,330 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>J A M E S </title>
+    <link rel="icon" href="{% static 'images/logo-icon.png' %}">
+
+
+    <link rel="icon" href="/Assets/img/15.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'icofont/icofont.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome-free/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'aos/aos.css' %}">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+
+    <!-- links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="preload" href="{% static 'images/fonts/Agustina.21f233e1.woff' %}" as="font" type="font/woff" crossorigin="">
+    <!-- links -->
+</head>
+
+
+<body data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
+    <button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>
+    <header id="header" class="fixed-top ">
+        <div class="container-fluid  navbur">
+
+            <div class="navi">
+                <div class="col-xl-9 d-flex align-items-center lefty">
+                    <h1 class="logo mr-auto"><a href="index.html">James Waweru</a></h1>
+
+                    <nav class="nav-menu d-none d-lg-block float-right">
+                        <ul>
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+                            <li><a href="#work">My Work</a></li>
+
+                            <li><a href="#contact">Contact</a></li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="pt-5 descript" id="home">
+        <div class="container">
+
+            <div class="small-container ">
+                <div class="row">
+                    <div class="col-md-6 initial-0 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                        <p id="hey">HEY THERE !</p>
+                        {% for infor in info %}
+                        <h1 id="name">I AM <span>{{infor.name_complete}}</span> </h1>
+                        <h3> a web developer</h3>
+                        <p> <span id="big"></span>{{infor.mini_about}}</p>
+
+                        <div class="social">
+                            <a href="{{infor.instagram}}"> <i class="icofont-instagram"></i></a>
+
+                            <a href="{{infor.twitter}}"> <i class="icofont-twitter"></i></a>
+                            <a href="https://www.facebook.com/toreslander.jamara"><i class="fab fa-linkedin-in"></i>
+                           </a>
+                            <a href="{{infor.facebook}}"><i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="button">
+                            <button> <a href="mailto:{{infor.email}}">CONTACT ME</a> </button>
+                            <a class="main-button ml-2" href="{{infor.cv.url}}" target="_blank" rel="noopener noreferrer"> <button id="btn2">MY RESUME
+                            </button></a>
+
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 initial-1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                        <img src="{{infor.avatar.url}}" alt="">
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about its-me " id="about">
+        <div class="container2">
+
+            <div class="small-container2 ">
+                <div class="row2 initial-3">
+                    {% for aboutme in about %}
+                    <div class="col-md-6 aos-init" data-aos="fade-up-right" data-aos-delay="700">
+                        <img src="{{aboutme.about_avatar.url}}" alt="">
+                    </div>
+                    <div class="col-md-6 initial-4">
+                        <div class="title aos-init" data-aos="zoom-in" data-aos-delay="200">
+                            <h1>{{aboutme.title}}</h1>
+                        </div>
+                        <p data-aos="zoom-in" data-aos-delay="200" class="aos-init">{{aboutme.description1}}</p>
+                        <p data-aos="zoom-in" data-aos-delay="200" class="aos-init">{{aboutme.description2}}</p>
+                        <div class="icons aos-init" data-aos="zoom-in" data-aos-delay="300">
+                            <div> <i class="fab fa-html5"></i>
+                                <p>Html5</p>
+                            </div>
+
+                            <div> <i class="fab fa-css3"></i>
+                                <p>Css</p>
+                            </div>
+                            <div> <i class="fab fa-js"></i>
+                                <p>Javascript</p>
+                            </div>
+                            <div> <i class="fab fa-react"></i>
+                                <p>Reactjs</p>
+                            </div>
+                            <div> <i class="fab fa-python"></i>
+                                <p>Python</p>
+                            </div>
+
+                            <div> <i class="fas fa-database"></i>
+                                <p>sql-database</p>
+                            </div>
+                            <!-- <div class="django"> <img src="{% static 'images/django.png' %}" width="40" height="80">
+                            </div> -->
+
+
+                        </div>
+
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <article>
+            <div class="container skills" id="skills">
+
+                <div class="small-container">
+                    <div class="row9">
+                        <div class="col-md-10 initial-5">
+                            <div class="title">
+                                <h1 class="">SKILLS</h1>
+                            </div>
+                            <div class="all-bars">
+                                <div class="bars aos-init" data-aos="zoom-in" data-aos-delay="800">
+                                    <div class="bar-info">
+                                        <p>Frondend</p>
+                                        <h5>70%</h5>
+                                    </div>
+                                    <div class="bar">
+                                        <p id="one"></p>
+                                    </div>
+                                </div>
+                                <div class="bars aos-init" data-aos="zoom-in" data-aos-delay="300">
+                                    <div class="bar-info">
+                                        <p>Backend</p>
+                                        <h5>50%</h5>
+                                    </div>
+                                    <div class="bar">
+                                        <p id="two"></p>
+                                    </div>
+                                </div>
+                                <div class="bars aos-init" data-aos="zoom-in" data-aos-delay="300">
+                                    <div class="bar-info">
+                                        <p>Javascript</p>
+                                        <h5>75%</h5>
+                                    </div>
+                                    <div class="bar">
+                                        <p id="three"></p>
+                                    </div>
+                                </div>
+                                <div class="bars aos-init" data-aos="zoom-in" data-aos-delay="400">
+                                    <div class="bar-info">
+                                        <p>python</p>
+                                        <h5>60%</h5>
+                                    </div>
+                                    <div class="bar">
+                                        <p id="four"></p>
+                                    </div>
+                                </div>
+                                <div class="bars aos-init" data-aos="zoom-in" data-aos-delay="500">
+                                    <div class="bar-info">
+                                        <p>sql-database</p>
+                                        <h5>55%</h5>
+                                    </div>
+                                    <div class="bar">
+                                        <p id="five"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+
+
+    <div class="work">
+        <div class="container" id="work">
+            <div class="title2">
+                <h1>MY WORK</h1>
+            </div>
+            <div class="small-container">
+                <div class="row3">
+                    {% for sys in skills %}
+                    <div class="card initial-6  w- aos-init" data-aos="zoom-in" data-aos-delay="500">
+
+                        <img src="{{sys.image.url}}" alt="">
+
+
+                        <div class="card-body col-5-info px-3 py-3">
+                            <h3 class="pb-1">{{sys.title}}</h3>
+                            <p class="pb-1">{{sys.skill}}</p>
+                            <button><a href="{{sys.link}}">VISIT</a></button>
+
+                        </div>
+
+                    </div>
+                    {% endfor %}
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer id="contact">
+        <div class="container">
+            <div class="title5">
+                <h1>CONTACT ME</h1>
+            </div>
+            <div class="small-container">
+                <div class="row4">
+                    <div class="col-md-6 initial-8 aos-init" data-aos="fade-down-right" data-aos-delay="300">
+                        <p id="helo">Wanna talk about a project or just saying hi <img src="{%  static 'images/e.png' %}" alt="" id="e" class="wave"></p>
+
+                        <div class="contact-info">
+                            <div class="c-ico">
+                                <i class="fas fa-sms"> <span id="io">Say Hello</span></i>
+
+                            </div>
+                            <p>Email: <span>jameswaweru399@gmail.com</span></p>
+                            <p>Phone: <span>+254771933012</span></p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="c-ico">
+                                <i class="fas fa-map-marker-alt"></i><span id="io">Find me in</span>
+                            </div>
+                            <p><span>Nakuru, Kenya</span></p>
+
+                        </div>
+                        <div class="contact-info obojo">
+                            <div class="c-ico">
+                                <i class="fas fa-share"> <span id="io">Social networks</span> </i>
+                            </div>
+                            <h4>
+                                <a href="https://www.instagram.com/jamara_james/" class="m1"> <i class="icofont-instagram"></i></a>
+
+                                <a href="https://twitter.com/JamaraJames_" class="m1"> <i class="icofont-twitter"></i></a>
+                                <a href=""><i class="fab fa-github"></i>
+                                </a>
+                                <i class="fab fa-linkedin-in"></i>
+
+                            </h4>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 initial-7 aos-init" data-aos="zoom-in" data-aos-delay="700">
+                        <img src="{% static 'images/19.svg' %}" alt="">
+                    </div>
+
+                </div>
+                <div class="footing ">
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <p>Designed By </p>
+                            <p>James Waweru</p>
+                            <p>A Full Web Developer</p>
+                            <p id="copy">© COPYRIGHTS FOLIO. ALL RIGHTS RESERVED.
+                        </div>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="up-arrow">
+            <div class="arrow">
+                <a href="#"><i class="fas fa-angle-up"></i>
+            </a>
+            </div>
+        </div>
+
+    </footer>
+
+    <div id="preloader"></div>
+
+    <script src="{% static 'jquery/jquery.min.js' %}"></script>
+
+    <script src="{% static 'isotope-layout/isotope.pkgd.min.js' %}'"></script>
+    <script src="{% static 'aos/aos.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <script src="{% static 'jquery.easing/jquery.easing.min.js' %}"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
