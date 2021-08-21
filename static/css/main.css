@@ -969,6 +969,7 @@
     
     #big {
         font-size: 20px;
+        font-family: 'Montserrat', sans-serif !important;
     }
     
     .icons i {
@@ -1266,6 +1267,10 @@
             right: 140px !important;
             bottom: 180px;
         }
+    }
+    
+    p {
+        font-family: 'Montserrat', sans-serif !important;
     }
     /* body,
 h1,
