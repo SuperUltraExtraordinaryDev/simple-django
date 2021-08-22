@@ -1,5 +1,4 @@
-!(function($) {
-    "use strict";
+(function($) {
 
     // // Preloader
     // $(window).on('load', function() {
