@@ -45,6 +45,27 @@ class Projects(models.Model):
 
     def __str__(self):
         return self.title
+
+class Contact(models.Model):
+    title=models.CharField(max_length=50, blank=True, null=True)
+
+    email = models.EmailField(max_length=255, blank=True, null=True)
+    location=models.CharField(max_length=50, blank=True, null=True)
+    msg= models.TextField(max_length=100, blank=True, null=True)
+    link=models.URLField(blank=True, null=True)
+    image= models.ImageField(blank=True, null=True)
+
+
+    github = models.URLField(blank=True, null=True)
+    linkedin = models.URLField(blank=True, null=True)
+    facebook = models.URLField(blank=True, null=True)
+    twitter = models.URLField(blank=True, null=True)
+
+    instagram = models.URLField(blank=True, null=True)
+
+    def __str__(self):
+        return self.title
+
  
     
 
