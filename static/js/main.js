@@ -1,4 +1,4 @@
-(function($) {
+$(document).ready(function() {
 
     // // Preloader
     // $(window).on('load', function() {
@@ -134,7 +134,10 @@
         });
     });
 
-})(jQuery);
+});
+
+
+
 
 $(function() {
     $(document).scroll(function() {
