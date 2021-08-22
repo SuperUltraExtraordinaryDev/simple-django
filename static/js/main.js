@@ -1,14 +1,12 @@
-!(function($) {
-    "use strict";
-
-    // Preloader
-    // $(window).on('load', function() {
-    //     if ($('#preloader').length) {
-    //         $('#preloader').delay(100).fadeOut('slow', function() {
-    //             $(this).remove();
-    //         });
-    //     }
-    // });
+// Preloader
+// $(window).on('load', function() {
+//     if ($('#preloader').length) {
+//         $('#preloader').delay(100).fadeOut('slow', function() {
+//             $(this).remove();
+//         });
+//     }
+// });
+$(document).ready(function() {
 
 
     const themeButton = document.getElementById('theme-button')
@@ -135,11 +133,11 @@
         });
     });
 
-})(jQuery);
+})
 
-$(function() {
-    $(document).scroll(function() {
-        var $nav = $(".navbur");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-    });
-});
+// $(function() {
+//     $(document).scroll(function() {
+//         var $nav = $(".navbur");
+//         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+//     });
+// });
