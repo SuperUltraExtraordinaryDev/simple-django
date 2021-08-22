@@ -22,7 +22,8 @@ a {
     text-decoration: none !important;
 }
 
-#preloader {
+
+/* #preloader {
     position: fixed;
     top: 0;
     left: 0;
@@ -66,7 +67,7 @@ a {
 }
 
 
-/* s */
+s */
 
 #header {
     transition: all 0.5s;
