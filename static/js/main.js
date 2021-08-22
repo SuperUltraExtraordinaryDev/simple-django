@@ -1,14 +1,14 @@
 !(function($) {
     "use strict";
 
-    // Preloader
-    $(window).on('load', function() {
-        if ($('#preloader').length) {
-            $('#preloader').delay(100).fadeOut('slow', function() {
-                $(this).remove();
-            });
-        }
-    });
+    // // Preloader
+    // $(window).on('load', function() {
+    //     if ($('#preloader').length) {
+    //         $('#preloader').delay(100).fadeOut('slow', function() {
+    //             $(this).remove();
+    //         });
+    //     }
+    // });
 
 
     const themeButton = document.getElementById('theme-button')
@@ -123,10 +123,10 @@
 
 
 
-    AOS.init({
-        duration: 1500,
-        once: true
-    });
+    // AOS.init({
+    //     duration: 1500,
+    //     once: true
+    // });
 
     $(function() {
         $(document).scroll(function() {
