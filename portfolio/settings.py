@@ -17,6 +17,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'jameswaweru.herokuapp.com',
+    'jameswaweruweb.herokuapp.com',
     '127.0.0.1'
 ]
 
