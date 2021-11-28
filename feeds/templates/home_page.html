@@ -88,9 +88,9 @@
                             <a href="{{infor.instagram}}"> <i class="icofont-instagram"></i></a>
 
                             <a href="{{infor.twitter}}"> <i class="icofont-twitter"></i></a>
-                            <a href="https://www.facebook.com/toreslander.jamara"><i class="fa fa-facebook-f" style="background: #4974c5 "></i>
+                            <a href="{{infor.facebook}}"><i class="fa fa-facebook-f" style="background: #4974c5 "></i>
                            </a>
-                            <a href="{{infor.facebook}}"><i class="fa fa-github"></i>
+                            <a href="{{infor.github}}"><i class="fa fa-github"></i>
                             </a>
                         </div>
                         <div class="button">
@@ -288,6 +288,8 @@
             </div>
             <div class="small-container">
                 <div class="row4">
+                                         {% for infor in info %}
+   
                     <div class="col-md-6 initial-8 aos-init" data-aos="fade-down-right" data-aos-delay="300">
                         <p id="helo">Wanna talk about a project or just saying hi <img src="{%  static 'images/e.png' %}" alt="" id="e" class="wave"></p>
 
@@ -296,14 +298,14 @@
                     <i class="fa fa-comments"></i> <span id="io">Say Hello</span></i>
 
                             </div>
-                            <p>Email: <span>jameswaweru399@gmail.com</span></p>
-                            <p>Phone: <span>+254771933012</span></p>
+                            <p>Email: <span>{{infor.email}}</span></p>
+                            <p>Phone: <span>{{infor.phone}}</span></p>
                         </div>
                         <div class="contact-info">
                             <div class="c-ico">
                                 <i class="fa fa-map-marker"></i><span id="io">Find me in</span>
                             </div>
-                            <p><span>Nakuru, Kenya</span></p>
+                            <p><span>{{infor.address}}</span></p>
 
                         </div>
                         <div class="contact-info obojo">
@@ -311,13 +313,12 @@
                                 <i class="fa fa-share-square-o"> <span id="io">Social networks</span> </i>
                             </div>
                             <h4>
-                                <a href="https://www.instagram.com/jamara_james/" class="m1"> <i class="icofont-instagram"></i></a>
+                                <a href="{{infor.instagram}}" class="m1"> <i class="icofont-instagram"></i></a>
 
-                                  <a href="https://twitter.com/JamaraJames_" class="m1"> <i class="icofont-twitter"></i></a>
-                                <a href=""><i class="fa fa-github"></i>
+                                  <a href="{{infor.twitter}}" class="m1"> <i class="icofont-twitter"></i></a>
+                                <a href="{{infor.github}}"><i class="fa fa-github"></i>
                                 </a>
-                                <i class="fa fa-facebook" style="background: #4974c5"></i>
-
+                                <a href="{{infor.facebook}}"><i class="fa fa-facebook" style="background: #4974c5"></i></a>
                             </h4>
 
                         </div>
@@ -325,7 +326,7 @@
                     <div class=" col-md-6 initial-7 aos-init " data-aos="zoom-in " data-aos-delay="700 ">
                         <img src="{% static 'images/19.svg' %} " alt=" ">
                     </div>
-
+{% endfor %}
                 </div>
                 <div class="footing ">
                     <div class="row justify-content-center ">
