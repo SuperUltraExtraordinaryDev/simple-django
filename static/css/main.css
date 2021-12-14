@@ -354,7 +354,8 @@ nav {
 	color: #fff;
 }
 .descript {
-	margin-top: 60px !important;
+	margin-top: 160px !important;
+	/* padding-top: 4rem !important; */
 }
 .initial-0 {
 	color: #f0f8ff;
@@ -364,6 +365,7 @@ nav {
 	color: #fff;
 	font-size: 3rem !important;
 }
+
 .initial-0 #hey {
 	margin-bottom: 20px !important;
 }
@@ -379,6 +381,7 @@ nav {
 .button {
 	margin-top: 20px;
 }
+
 .initial-0 button {
 	height: 60px !important;
 	border-radius: 4px;
@@ -884,6 +887,7 @@ ion-icon {
 		flex-basis: 80%;
 		text-align: center;
 		font-size: 12px;
+		margin-top: 20px;
 	}
 	.button button {
 		height: 35px;
@@ -1108,3 +1112,9 @@ body.dark-theme .contact-info #io {
 body.dark-theme .contact-info #io {
 	color: #2e2d2d !important;
 }
+/* .lap1 {
+	padding-top: 300px !important;
+} */
+/* .pt-6 {
+	padding-top: 3.5rem !important;
+} */

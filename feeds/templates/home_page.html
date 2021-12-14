@@ -74,8 +74,8 @@
         </div>
     </header>
 
-    <section class="pt-5 descript" id="home">
-        <div class="container">
+    <section class=" descript "  id="home">
+        <div class="container ">
 
             <div class="small-container ">
                 <div class="row">
@@ -97,14 +97,14 @@
                         </div>
                         <div class="button">
                             <a href="mailto:{{infor.email}}"> <button class="main-button2">Contact me <i class="uil uil-message"style="" ></i>  </button></a>
-                            <a class="main-button ml-2" href="{{infor.cv.url}}" target="_blank" rel="noopener noreferrer"> <button id="btn2">My Resume <i class="uil uil-import"></i></i>
+                            <a class="main-button ml-2" href="{{infor.mycv}}" target="_blank" rel="noopener noreferrer"> <button id="btn2">My Resume <i class="uil uil-import"></i></i>
                             </button></a>
 
                         </div>
 
                     </div>
                     <div class="col-md-6 initial-1 aos-init" data-aos="zoom-in" data-aos-delay="300">
-                        <img src="{{infor.avatar.url}}" alt="">
+                        <img src="{{infor.avatar}}" alt="">
                     </div>
                     {% endfor %}
 
@@ -121,7 +121,7 @@
                 <div class="row2 initial-3">
                     {% for aboutme in about %}
                     <div class="col-md-6 aos-init" data-aos="fade-up-right" data-aos-delay="700">
-                        <img src="{{aboutme.about_avatar.url}}" alt="">
+                        <img src="{{aboutme.about_avatar}}" alt="">
                     </div>
                     <div class="col-md-6 initial-4">
                         <div class="title aos-init" data-aos="zoom-in" data-aos-delay="200">
@@ -262,7 +262,7 @@
                     {% for sys in skills %}
                     <div class="card initial-6  w- aos-init" data-aos="zoom-in" data-aos-delay="500">
 
-                        <img src="{{sys.image.url}}" alt="">
+                        <img src="{{sys.image}}" alt="">
 
 
                         <div class="card-body col-5-info px-3 py-3">
