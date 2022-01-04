@@ -2,7 +2,6 @@
 
 This is a Simple Python Django Portolio.The portfolio is Dynamic so use /admin to login into Django admin panel to change you personal info.
 
-<h3>LIVE DEMO: https://jameswaweru.herokuapp.com/
 <h3> 
      
      
