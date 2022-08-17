@@ -1,6 +1,6 @@
 # SimpleDjangoPortfolio
 
-This is a Simple Python Django Portolio.The portfolio is Dynamic so use /admin to login into Django admin panel to change you personal info.
+This is a Simple Python Django Portolio.The portfolio is easy  just use "/admin"  to login into Django admin panel to change you personal info.
 
 <h3> 
      
