@@ -498,18 +498,18 @@ button:nth-child(2) {
 #one {
 	height: 10px;
 	background: #db7093;
-	width: 70%;
+	width: 60%;
 	border-radius: 30px;
 }
 #two {
 	height: 10px;
-	width: 50%;
+	width: 60%;
 	background: #2a6eec;
 	border-radius: 30px;
 }
 #three {
 	height: 10px;
-	width: 65%;
+	width: 60%;
 	background: #15ff00;
 	border-radius: 30px;
 }
@@ -521,19 +521,19 @@ button:nth-child(2) {
 }
 #five {
 	height: 10px;
-	width: 55%;
+	width: 60%;
 	background: #e9b50a;
 	border-radius: 30px;
 }
 #six {
 	height: 10px;
-	width: 40%;
+	width: 60%;
 	background: #b610a8;
 	border-radius: 30px;
 }
 #seven {
 	height: 10px;
-	width: 75%;
+	width: 60%;
 	background: #067719;
 	border-radius: 30px;
 }
