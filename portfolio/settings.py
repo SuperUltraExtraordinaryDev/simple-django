@@ -16,8 +16,8 @@ SECRET_KEY = 'django-insecure-9o^!5shqqavj@#@&36+y+nl3csjw2%hr3(wrzh@be05fd5ita)
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'jameswaweru.herokuapp.com',
-    'jameswaweruweb.herokuapp.com',
+    'lobster-app-2sn9l.ondigitalocean.app',
+    'localhost',
     '127.0.0.1'
 ]
 
