@@ -812,6 +812,7 @@ a {
 .icons i,
 ion-icon {
 	cursor: pointer;
+	color:#000;
 }
 .fa-html5 {
 	color: #ff4500;
