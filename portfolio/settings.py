@@ -18,7 +18,8 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'lobster-app-2sn9l.ondigitalocean.app',
     'localhost',
-    '127.0.0.1'
+    '127.0.0.1',
+    'stingray-app-u4cbl.ondigitalocean.app'
 ]
 
 # Application definition
